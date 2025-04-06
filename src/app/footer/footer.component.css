@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background: linear-gradient(-45deg, #2C3E50, #025cca, #0a2b4d);
   color: white;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .footer-social a:hover {
-  color: #007BFF;
+  color: #0582ff;
 }
 
 .footer-social i {
@@ -42,7 +42,7 @@
 .footer-bottom {
   text-align: center;
   padding: 10px 0;
-  background-color: #222;
+  background-color: #041f3a;
   color: white;
 }
 

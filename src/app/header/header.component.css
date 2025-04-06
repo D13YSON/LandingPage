@@ -1,16 +1,18 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 1rem;
-  background-color: #2C3E50;
+  background: linear-gradient(-45deg, #2C3E50, #025cca, #0a2b4d);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
   color: rgb(255, 255, 255);
   position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100px;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .logo {
@@ -37,6 +39,18 @@ header {
   margin-right: 4%;
 }
 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -51,4 +65,13 @@ nav ul li {
 
 nav ul li:last-child {
   margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0582ff;
 }
